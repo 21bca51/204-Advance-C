@@ -10,7 +10,7 @@ void main()
 
 	//name contain 5 string and each string has 9 charactar.
 
-	int i,j;
+	int i,j,c;
 	clrscr();
 
 	//Logic to input 5 string.
@@ -32,7 +32,7 @@ void main()
 	printf("\n");
 	for(i=0;i<5;i++)
 	{
-		for(j=0;j<9;j++)
+		for(j=0,c=0;j<9;j++)
 		{
 			switch(name[i][j])
 			{
@@ -47,12 +47,11 @@ void main()
 				case 'U':
 				case 'u':
 					printf("%c,",name[i][j]);
-					break;
-				default:
-					printf(" ");
+					c++;
 					break;
 			}
 		}
+		printf("\n Vowels in name %d is %d."i+1,C);
 	}
 	getch();
 }
